@@ -1,0 +1,29 @@
+nav {
+  width: 100dvw;
+  position: fixed;
+  top: 0;
+
+  .links-container {
+    padding-top: 1.75rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      color: rgb(235, 235, 235);
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  svg {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
+}
