@@ -9,6 +9,7 @@ import HomePage from './Pages/HomePage';
 import ErrorPage from './Pages/ErrorPage';
 import GamePage from './Pages/GamePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AboutPage from './Pages/AboutPage';
 
 const router = createBrowserRouter([
 	{
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
 	{
 		path: '/game',
 		element: <GamePage />,
+	},
+	{
+		path: '/about',
+		element: <AboutPage />,
 	},
 ]);
 

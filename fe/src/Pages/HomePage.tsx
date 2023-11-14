@@ -1,19 +1,14 @@
+import {Link} from 'react-router-dom';
 import Navbar from '../features/Navbar/Navbar';
 import './homePage.scss';
-import {useNavigate} from 'react-router-dom';
 
 function HomePage() {
-	const nav = useNavigate();
-
-	const redirect = () => {
-		nav('/game');
-	};
-
 	return (
 		<>
 			<Navbar />
 			<div className='home-container'>
-				<button onClick={redirect}>play the game</button>
+				<h1>Timber Tales</h1>
+				<Link to={'/game'}>play the game</Link>
 			</div>
 		</>
 	);

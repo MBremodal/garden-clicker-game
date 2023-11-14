@@ -1,0 +1,27 @@
+.about-section {
+  height: 100dvh;
+  width: 100dvw;
+  padding: 4rem;
+  background-color: #344D4C;
+  color: #f0f0f0;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  a {
+    font-size: 1.2rem;
+    color: black;
+
+    &:hover {
+      transform: translateY(10px);
+    }
+  }
+
+}
