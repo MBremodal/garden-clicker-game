@@ -5,11 +5,12 @@ import './globalStyles/index.scss';
 import {QueryClient, QueryClientProvider} from 'react-query';
 import {Provider} from 'react-redux';
 import store from './redux/store/store';
-import HomePage from './Pages/HomePage';
-import ErrorPage from './Pages/ErrorPage';
-import GamePage from './Pages/GamePage';
+import HomePage from './Pages/HomePage/HomePage';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
+import GamePage from './Pages/GamePage/GamePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AboutPage from './Pages/AboutPage';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import RegisterPage from './Pages/RegisterPage/RegisterPage';
 
 const router = createBrowserRouter([
 	{
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
 	{
 		path: '/about',
 		element: <AboutPage />,
+	},
+	{
+		path: '/register',
+		element: <RegisterPage />,
 	},
 ]);
 

@@ -5,9 +5,9 @@ function Navbar() {
 		<nav>
 			<div className='links-container'>
 				<a href='/about'>about</a>
-				<a href='#'>leaderboard</a>
-				<a href='#'>register</a>
-				<a href='#'>log in</a>
+				<a href='/leaderboard'>leaderboard</a>
+				<a href='/register'>register</a>
+				<a href='/login'>log in</a>
 			</div>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
