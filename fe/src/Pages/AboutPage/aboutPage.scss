@@ -1,9 +1,11 @@
+@import '../../globalStyles/variables';
+
 .about-section {
   height: 100dvh;
   width: 100dvw;
   padding: 4rem;
-  background-color: #344D4C;
-  color: #f0f0f0;
+  background-color: $bg-primary;
+  color: $font-primary;
 
   h1 {
     font-size: 24px;
@@ -23,5 +25,4 @@
       transform: translateY(10px);
     }
   }
-
 }

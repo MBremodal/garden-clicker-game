@@ -1,16 +1,17 @@
+import './globalStyles/index.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import './globalStyles/index.scss';
 import {QueryClient, QueryClientProvider} from 'react-query';
 import {Provider} from 'react-redux';
 import store from './redux/store/store';
 import HomePage from './Pages/HomePage/HomePage';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import GamePage from './Pages/GamePage/GamePage';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutPage from './Pages/AboutPage/AboutPage';
-import RegisterPage from './Pages/RegisterPage/RegisterPage';
+import RegisterPage from './Pages/RegisterLoginPages/RegisterPage';
+import LoginPage from './Pages/RegisterLoginPages/LoginPage';
 
 const router = createBrowserRouter([
 	{
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
 	{
 		path: '/register',
 		element: <RegisterPage />,
+	},
+	{
+		path: '/login',
+		element: <LoginPage />,
 	},
 ]);
 
