@@ -36,7 +36,7 @@ export default function RegisterPage() {
 						{...register('repeat password', {required: true, min: 5, maxLength: 20})}
 					/>
 
-					<input type='submit' />
+					<button type='submit'>Register</button>
 				</form>
 			</div>
 		</div>

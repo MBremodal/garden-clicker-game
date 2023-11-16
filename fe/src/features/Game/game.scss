@@ -1,0 +1,24 @@
+.board-container {
+  margin-top: 2rem;
+  border: 2px solid black;
+  padding: 2rem 0.5rem;
+}
+
+.tile-container {
+  img {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+  }
+
+  .animate-single-tile {
+    transform: scale(1.1);
+    animation: scale-back 0.1s forwards;
+  }
+
+  @keyframes scale-back {
+    to {
+      transform: scale(1);
+    }
+  }
+}

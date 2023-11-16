@@ -1,14 +1,16 @@
 import {useDispatch, useSelector} from 'react-redux';
 import {add} from '../../redux/store/store';
+import GameBoard from '../../features/Game/GameBoard';
 
 function GamePage() {
 	const dispatch = useDispatch();
-	const count = useSelector((state) => state.counter.value);
+	const {counter} = useSelector((state) => state.general);
 
 	return (
 		<div className='container'>
-			<p>{count}</p>
+			<p>{counter}</p>
 			<button onClick={() => dispatch(add())}>+</button>
+			<GameBoard />
 		</div>
 	);
 }

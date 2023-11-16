@@ -2,14 +2,18 @@
 import {configureStore, createSlice} from '@reduxjs/toolkit';
 
 // Define a slice with the initial state and reducers
-const counterSlice = createSlice({
-	name: 'counter',
+const generalSlice = createSlice({
+	name: 'general',
 	initialState: {
-		value: 0,
+		counter: 0,
+		animation: false,
 	},
 	reducers: {
 		add: (state) => {
-			state.value += 1;
+			state.counter += 1;
+		},
+		animate: (state, action) => {
+			state.animation = action.payload;
 		},
 	},
 });
@@ -17,11 +21,11 @@ const counterSlice = createSlice({
 // Create the Redux store
 const store = configureStore({
 	reducer: {
-		counter: counterSlice.reducer,
+		general: generalSlice.reducer,
 	},
 });
 
 // Export the actions
-export const {add} = counterSlice.actions;
+export const {add, animate} = generalSlice.actions;
 
 export default store;

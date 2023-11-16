@@ -30,7 +30,7 @@ export default function LoginPage() {
 						{...register('password', {required: true, min: 5, maxLength: 20})}
 					/>
 
-					<input type='submit' />
+					<button type='submit'>Login</button>
 				</form>
 			</div>
 		</div>
