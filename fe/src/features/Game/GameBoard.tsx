@@ -1,10 +1,13 @@
-import Tile from './Tile';
+import Grid from './Grid';
 import './game.scss';
 
 function GameBoard() {
 	return (
 		<div className='board-container'>
-			<Tile />
+			<Grid
+				rows={2}
+				columns={5}
+			/>
 		</div>
 	);
 }

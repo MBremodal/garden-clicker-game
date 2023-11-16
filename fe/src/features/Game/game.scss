@@ -4,7 +4,16 @@
   padding: 2rem 0.5rem;
 }
 
+.grid-container {
+  .grid-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 .tile-container {
+  width: fit-content;
+
   img {
     cursor: pointer;
     transition: 0.2s ease-in-out;
