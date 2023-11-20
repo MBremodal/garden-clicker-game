@@ -7,6 +7,7 @@ const generalSlice = createSlice({
 	initialState: {
 		counter: 0,
 		animation: false,
+		currentTile: null,
 	},
 	reducers: {
 		add: (state) => {
@@ -14,6 +15,9 @@ const generalSlice = createSlice({
 		},
 		animate: (state, action) => {
 			state.animation = action.payload;
+		},
+		setCurrentTile: (state, action) => {
+			state.currentTile = action.payload;
 		},
 	},
 });
@@ -26,6 +30,6 @@ const store = configureStore({
 });
 
 // Export the actions
-export const {add, animate} = generalSlice.actions;
+export const {add, animate, setCurrentTile} = generalSlice.actions;
 
 export default store;

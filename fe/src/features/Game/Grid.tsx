@@ -1,31 +1,19 @@
 import './game.scss';
 import Tile from './Tile';
 
-const Grid = ({rows, columns}) => {
-	const generateGrid = () => {
-		const grid = [];
+const Grid = () => {
+	const grid = [];
 
-		for (let i = 0; i < rows; i++) {
-			const row = [];
+	for (let i = 0; i < 5; i++) {
+		grid.push(
+			<Tile
+				key={i}
+				idx={i}
+			/>
+		);
+	}
 
-			for (let j = 0; j < columns; j++) {
-				row.push(<Tile key={j} />);
-			}
-
-			grid.push(
-				<div
-					key={i}
-					className='grid-row'
-				>
-					{row}
-				</div>
-			);
-		}
-
-		return grid;
-	};
-
-	return <div className='grid-container'>{generateGrid()}</div>;
+	return <div>{grid}</div>;
 };
 
 export default Grid;
